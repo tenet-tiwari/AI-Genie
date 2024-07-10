@@ -1,0 +1,100 @@
+body,
+html{
+  padding:0px;
+  margin:0px;
+}
+
+/* App.css */
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  overflow: hidden;
+}
+
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #2e2e2e, #232323);
+}
+
+.paper {
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+  background: #1e1e1e; /* Dark background for paper */
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.input {
+  margin-bottom: 16px;
+}
+
+.input .Mui-focused {
+  color: #ffffff;
+}
+
+.input .MuiInput-underline:after {
+  border-bottom-color: #ffffff;
+}
+
+.input .MuiOutlinedInput-root fieldset {
+  border-color: #ffffff;
+}
+
+.input .MuiOutlinedInput-root:hover fieldset {
+  border-color: #ffffff;
+}
+
+.input .MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: #ffffff;
+}
+
+.button {
+  background-color: #3f51b5;
+  color: #ffffff;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.button:hover {
+  background-color: #303f9f;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(63, 81, 181, 0.3);
+}
+
+.typing-effect {
+  overflow: hidden;
+  border-right: .15em solid orange; /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the text on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
